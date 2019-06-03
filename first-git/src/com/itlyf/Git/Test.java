@@ -14,4 +14,9 @@ public class Test {
         int i = 0;
         i += 10;
     }
+
+    public void test1() {
+        int i = 0;
+        i += 10;
+    }
 }
