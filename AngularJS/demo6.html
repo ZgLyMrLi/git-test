@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>循环数组</title>
+    <script src="angular.min.js"></script>
+    <script>
+        //建立模块
+        var app=angular.module("myapp",[]);
+        //创建控制器     $scope就是视图层和控制层交换数据的桥梁
+        app.controller("mycontroller",function ($scope) {
+
+            $scope.list = [102,203,394,555];
+
+        });
+
+    </script>
+</head>
+<body ng-app="myapp" ng-controller="mycontroller">
+
+    <table>
+        <tr ng-repeat="x in list">
+            <td>{{x}}</td>
+        </tr>
+    </table>
+
+</body>
+</html>

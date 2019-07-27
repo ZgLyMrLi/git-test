@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [09/Jun/2019:19:23:44 +0800] "GET /user/showName.do HTTP/1.1" 500 13153 http-bio-8082-exec-1 21222
+0:0:0:0:0:0:0:1 - - [09/Jun/2019:19:25:37 +0800] "GET /user/showName.do HTTP/1.1" 200 5 http-bio-8082-exec-1 21844

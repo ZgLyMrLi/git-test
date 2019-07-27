@@ -1,0 +1,62 @@
+package com.pinyougou.sellergoods.service;
+
+import com.pinyougou.pojo.TbBrand;
+import entity.PageResult;
+
+import java.util.List;
+import java.util.Map;
+
+/**
+ *  品牌接口
+ */
+public interface BrandService {
+
+    public List<TbBrand> findAll();
+
+    /**
+     * 品牌分页
+     * @param pageNum 当前页码
+     * @param pageSize  每页记录数
+     * @return
+     */
+    public PageResult findPage(int pageNum,int pageSize);
+
+    /**
+     * 增加品牌
+     * @param tbBrand
+     */
+    public void add(TbBrand tbBrand);
+
+    /**
+     * 根据id查询实体
+     * @param id
+     * @return
+     */
+    public TbBrand findOne(long id);
+
+    /**
+     * 修改
+     * @param Brand
+     */
+    public void update(TbBrand Brand);
+
+    /**
+     * 删除
+     * @param ids
+     */
+    public void delete(long[] ids);
+
+    /**
+     * 品牌分页
+     * @param pageNum 当前页码
+     * @param pageSize  每页记录数
+     * @return
+     */
+    public PageResult findPage(TbBrand brand,int pageNum,int pageSize);
+
+    /**
+     * 返回下拉列表数据
+     * @return
+     */
+    public List<Map> selectOptionList();
+}
